@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Adhyansh Nishad, a Computer Science student specializing in Artificial Intelligence and Machine Learning.">
+  <meta name="theme-color" content="#171033">
+  <title>Adhyansh Nishad | AI &amp; ML Portfolio</title>
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("portfolio-theme");
+        document.documentElement.setAttribute("data-theme", savedTheme === "light" ? "light" : "dark");
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-orbit"><span class="loader-monogram">AN</span></div>
+    <div class="loader-bar"><span></span></div>
+    <p>Building the experience</p>
+  </div>
+
+  <div class="cursor-blob" id="cursorBlob" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="site-background" aria-hidden="true">
+    <span class="bg-orb bg-orb-violet"></span>
+    <span class="bg-orb bg-orb-cyan"></span>
+    <span class="bg-orb bg-orb-magenta"></span>
+    <span class="bg-orb bg-orb-indigo"></span>
+    <span class="bg-orb bg-orb-teal"></span>
+    <span class="bg-beam bg-beam-one"></span>
+    <span class="bg-beam bg-beam-two"></span>
+    <span class="bg-grid"></span>
+    <span class="bg-vignette"></span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Adhyansh Nishad home">
+        <span class="brand-mark">AN</span>
+        <span class="brand-text">Adhyansh Nishad</span>
+      </a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-aurora aurora-one" aria-hidden="true"></div>
+      <div class="hero-aurora aurora-two" aria-hidden="true"></div>
+      <div class="hero-spotlight" id="heroSpotlight" aria-hidden="true"></div>
+      <div class="hero-confetti" aria-hidden="true">
+        <span class="confetti confetti-1"></span>
+        <span class="confetti confetti-2"></span>
+        <span class="confetti confetti-3"></span>
+        <span class="confetti confetti-4"></span>
+        <span class="confetti confetti-5"></span>
+        <span class="confetti confetti-6"></span>
+        <span class="confetti confetti-7"></span>
+        <span class="confetti confetti-8"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="badge"><span class="pulse-dot"></span> B.Tech CSE · AI &amp; ML · 2nd Year</span>
+          <h1>Hi, I'm <span class="gradient-text">Adhyansh Nishad</span><br><span class="hero-sub">building toward AI/ML.</span></h1>
+          <p class="hero-description">I'm a Computer Science student specializing in Artificial Intelligence and Machine Learning. I like turning ideas into practical projects, exploring data-driven solutions and learning by building.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">&rarr;</span></a>
+            <a href="#contact" class="btn btn-cyan">Get in touch</a>
+          </div>
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/IMPRIME15" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/adhyansh-nishad-8b8b80385/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM6 9H2v12h4V9ZM4 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/adi_mr360/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" title="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="mailto:adinishad452@gmail.com" aria-label="Email Adhyansh Nishad" title="Email">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Profile of Adhyansh Nishad">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <div class="portrait-halo" aria-hidden="true"></div>
+          <span class="orbit-dot orbit-dot-one" aria-hidden="true"></span>
+          <span class="orbit-dot orbit-dot-two" aria-hidden="true"></span>
+          <span class="orbit-dot orbit-dot-three" aria-hidden="true"></span>
+          <span class="sticker sticker-star" aria-hidden="true"></span>
+          <span class="sticker sticker-ring" aria-hidden="true"></span>
+          <span class="sticker sticker-plus" aria-hidden="true"></span>
+          <span class="sticker sticker-squiggle" aria-hidden="true"></span>
+          <span class="sticker sticker-triangle" aria-hidden="true"></span>
+
+          <div class="float-card float-university">
+            <span class="float-dot"></span>
+            <span>Shri Ramswaroop Memorial University</span>
+          </div>
+
+          <div class="profile-frame">
+            <div class="frame-ring ring-one" aria-hidden="true"></div>
+            <div class="frame-ring ring-two" aria-hidden="true"></div>
+            <div class="profile-surface">
+              <div class="monogram" id="profileMonogram" aria-hidden="true">AN</div>
+              <img class="profile-photo" id="profileImage" alt="Adhyansh Nishad" hidden>
+            </div>
+            <div class="frame-caption">
+              <strong>Adhyansh Nishad</strong>
+              <span>Aspiring AI/ML Engineer</span>
+            </div>
+          </div>
+
+          <div class="float-card float-ai">
+            <span class="float-ai-icon" aria-hidden="true">&lt;/&gt;</span>
+            <div><strong>AI · ML · Data</strong><span>Learning every day</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats-strip reveal">
+        <div class="stat"><strong data-count="2" data-suffix="nd">2nd</strong><span>Year, B.Tech CSE</span></div>
+        <div class="stat"><strong data-count="5" data-pad="2">05</strong><span>Projects built</span></div>
+        <div class="stat"><strong data-count="3" data-pad="2">03</strong><span>Hackathon experiences</span></div>
+      </div>
+
+      <div class="tech-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <div class="ticker-set"><span>Python</span><span>Java</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>NumPy</span><span>Pandas</span><span>MySQL</span><span>Power BI</span></div>
+          <div class="ticker-set"><span>Python</span><span>Java</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>NumPy</span><span>Pandas</span><span>MySQL</span><span>Power BI</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span class="cue-line" aria-hidden="true"></span> Scroll to explore</a>
+    </section>
+
+    <section class="section section-about" id="about" data-accent="violet">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">01 / About me</span>
+          <h2>A little about me</h2>
+          <p>Computer Science, Artificial Intelligence and a steady habit of learning by doing.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal reveal-left">
+            <h3>I'm a CSE student who enjoys turning concepts into working things.</h3>
+            <p>I'm pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Shri Ramswaroop Memorial University. I'm interested in technology-driven solutions and spend much of my time exploring AI, machine learning, programming and data science.</p>
+            <p>I enjoy hackathons because they push me to learn quickly and build with a purpose. Working on practical projects helps me understand real problems better than theory alone. My long-term goal is to become an AI/ML Engineer, and I'm shaping my learning around that direction.</p>
+            <p>Away from the screen, I like playing chess, singing and cricket. These interests keep me curious, patient and comfortable with both strategy and teamwork.</p>
+            <div class="about-pills" aria-label="What I enjoy">
+              <span>Problem solving</span><span>Hackathons</span><span>Practical projects</span><span>Continuous learning</span>
+            </div>
+          </div>
+
+          <aside class="glance-card reveal reveal-right" aria-label="At a glance">
+            <div class="glance-head"><span class="eyebrow">At a glance</span><h3>Currently</h3></div>
+            <dl class="glance-list">
+              <div><dt>Location</dt><dd>Uttar Pradesh, India</dd></div>
+              <div><dt>University</dt><dd>Shri Ramswaroop Memorial University</dd></div>
+              <div><dt>Degree</dt><dd>B.Tech CSE (AI &amp; ML)</dd></div>
+              <div><dt>Year</dt><dd>2nd Year · 3rd Semester</dd></div>
+              <div><dt>Career goal</dt><dd>AI/ML Engineer</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt section-education" id="education" data-accent="blue">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">02 / Education</span>
+          <h2>Where I'm learning</h2>
+          <p>My current academic path and the areas I'm focusing on.</p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal reveal-left">
+            <div class="education-topline"><span class="status-chip"><span class="pulse-dot"></span> In progress</span><span>2nd Year · 3rd Semester</span></div>
+            <h3>Bachelor of Technology</h3>
+            <p class="education-field">Computer Science and Engineering — Artificial Intelligence &amp; Machine Learning</p>
+            <p class="education-university">Shri Ramswaroop Memorial University</p>
+            <div class="education-tags"><span>AI</span><span>Machine Learning</span><span>Data Science</span><span>Programming</span></div>
+          </article>
+
+          <div class="education-aside reveal reveal-right">
+            <div class="mini-card">
+              <span class="mini-icon">&gt;_</span>
+              <div><h4>Learning approach</h4><p>Build, test, reflect and improve. I use small projects to understand concepts properly.</p></div>
+            </div>
+            <div class="mini-card">
+              <span class="mini-icon">&#9678;</span>
+              <div><h4>Academic focus</h4><p>AI and ML foundations, programming, data handling and practical problem solving.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills" data-accent="cyan">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">03 / Skills</span>
+          <h2>What I work with</h2>
+          <p>Grouped by how I use them. I'm still growing, and I'm comfortable saying so.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-icon">&lt;/&gt;</span><div><h3>Programming Languages</h3><p>Writing and practising logic</p></div></div>
+            <div class="chip-cloud"><span>C</span><span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-icon">AI</span><div><h3>AI, ML &amp; Data Science</h3><p>Libraries and fundamentals I use</p></div></div>
+            <div class="chip-cloud"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Mathematics</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-icon">DB</span><div><h3>Database &amp; Analytics</h3><p>Storing and reading data</p></div></div>
+            <div class="chip-cloud"><span>MySQL</span><span>Power BI</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-icon">&#9881;</span><div><h3>Development Tools</h3><p>My everyday workspace</p></div></div>
+            <div class="chip-cloud"><span>Visual Studio Code</span><span>Git</span><span>GitHub</span><span>Canva</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt section-projects" id="projects" data-accent="magenta">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">04 / Projects</span>
+          <h2>Things I've built</h2>
+          <p>Open a card to see its key features. Only confirmed technologies and details are listed.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card--featured reveal" data-accent="violet">
+            <div class="project-thumb project-thumb--img"><span class="featured-badge">Featured project</span><img class="thumb-img" src="images/vaultora.jpeg" alt="VAULTORA mobile app screens showing a warranty tracker and AI invoice scanner" loading="lazy" decoding="async"><span class="thumb-label">VAULTORA</span></div>
+            <div class="project-body">
+              <div class="project-tags"><span>Android</span><span>AI</span></div>
+              <h3>VAULTORA</h3>
+              <p class="project-full">Smart Digital Purchase &amp; Medicine Management System</p>
+              <p>An Android-first system for organizing purchase invoices, tracking return deadlines and warranties, and monitoring medicine expiry dates. Previously named eSafe.</p>
+              <details class="project-details"><summary>Key features</summary><ul><li>AI-based invoice information extraction</li><li>Digital invoice storage</li><li>Return deadline reminders</li><li>Warranty expiry notifications</li><li>Medicine expiry tracking</li><li>Smart content-based search</li><li>Warranty claim email drafting</li><li>Offline functionality</li></ul></details>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-accent="pink">
+            <div class="project-thumb project-thumb--img"><img class="thumb-img" src="images/alumni-connect.jpeg" alt="Alumni Connect platform dashboard with an alumni directory, mentors, events and jobs" loading="lazy" decoding="async"><span class="thumb-label">Alumni Connect</span></div>
+            <div class="project-body">
+              <div class="project-tags"><span>Website</span><span>SIH 2025</span></div>
+              <h3>Alumni Connect Platform</h3>
+              <p>A website developed for Smart India Hackathon 2025 to connect passed-out students with their college and help both sides stay in touch.</p>
+              <details class="project-details"><summary>Key features</summary><ul><li>Connects alumni with their institution</li><li>Supports ongoing college–alumni communication</li><li>Built for Smart India Hackathon 2025</li></ul></details>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-accent="cyan">
+            <div class="project-thumb project-thumb--img"><img class="thumb-img" src="images/nyayasetu.jpeg" alt="NYAYASETU legal guidance dashboard with step-by-step help guides and an AI legal chatbot" loading="lazy" decoding="async"><span class="thumb-label">NYAYASETU</span></div>
+            <div class="project-body">
+              <div class="project-tags"><span>AI</span><span>SIH 2026</span></div>
+              <h3>NYAYASETU (VIVEKA)</h3>
+              <p>An AI-powered legal guidance and assistance system developed for Smart India Hackathon 2026. It gives first-level guidance and helps people understand initial steps.</p>
+              <details class="project-details"><summary>Key features</summary><ul><li>First-level legal guidance</li><li>Explains legal processes and available assistance</li><li>Secured Top 7 in the college hackathon with VIVEKA</li></ul></details>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-accent="teal">
+            <div class="project-thumb project-thumb--img"><img class="thumb-img" src="images/parakh.jpeg" alt="PARAKH food compliance OCR dashboard scanning a packaged product label" loading="lazy" decoding="async"><span class="thumb-label">PARAKH</span></div>
+            <div class="project-body">
+              <div class="project-tags"><span>OCR</span><span>SIH 2026</span></div>
+              <h3>PARAKH</h3>
+              <p>An OCR-based system developed for Smart India Hackathon 2026 to assist food inspectors with packaged commodity checks.</p>
+              <details class="project-details"><summary>Key features</summary><ul><li>Extracts information using Optical Character Recognition</li><li>Helps verify relevant legal requirements</li><li>Built for Smart India Hackathon 2026</li></ul></details>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-accent="sun">
+            <div class="project-thumb project-thumb--img"><img class="thumb-img" src="images/esafe.jpeg" alt="eSAFE citizen safety dashboard with emergency SOS, incident reporting and helplines" loading="lazy" decoding="async"><span class="thumb-label">eSAFE</span></div>
+            <div class="project-body">
+              <div class="project-tags"><span>Web App</span><span>Safety</span><span>AI</span></div>
+              <h3>eSAFE — Citizen Safety</h3>
+              <p>A citizen-safety dashboard that brings emergency SOS, live location sharing, incident reporting, safe-route planning and round-the-clock helplines into one friendly place.</p>
+              <details class="project-details"><summary>Key features</summary><ul><li>Hold-to-activate emergency SOS</li><li>Live location and safety hot-zone sharing</li><li>Incident reporting with status tracking</li><li>Safe route planner and family safety circle</li><li>AI assistant for safety and legal guidance</li><li>24/7 emergency helplines</li></ul></details>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer reveal">
+          <p>More code and experiments on my GitHub profile.</p>
+          <a class="btn btn-teal" href="https://github.com/IMPRIME15" target="_blank" rel="noopener noreferrer">View GitHub profile <span aria-hidden="true">&nearr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-achievements" id="achievements" data-accent="pink">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">05 / Achievements</span>
+          <h2>Milestones so far</h2>
+          <p>Hackathon participation and results, stated as they happened.</p>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card reveal"><span class="achievement-year">2025</span><h3>Smart India Hackathon</h3><p>Cleared the internal selection round.</p></article>
+          <article class="achievement-card reveal"><span class="achievement-year">2026</span><h3>Smart India Hackathon</h3><p>Participated in project development.</p></article>
+          <article class="achievement-card reveal"><span class="achievement-year">Top 7</span><h3>College Hackathon</h3><p>VIVEKA secured Top 7 position during the first year of B.Tech.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="interests" id="interests" data-accent="teal">
+      <div class="container interests-inner reveal">
+        <div><span class="eyebrow">Beyond code</span><h2>Interests</h2></div>
+        <div class="interest-list"><span>Chess</span><span>Singing</span><span>Cricket</span><span>Artificial Intelligence</span><span>Technology &amp; Innovation</span></div>
+      </div>
+    </section>
+
+    <section class="section section-alt section-contact" id="contact" data-accent="royal">
+      <div class="container contact-grid">
+        <div class="contact-info reveal reveal-left">
+          <div class="section-heading section-heading-left">
+            <span class="eyebrow">06 / Contact</span>
+            <h2>Let's connect</h2>
+            <p>Have a question, an idea or a project in mind? Reach out through any of these links.</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item"><span class="contact-icon">@</span><div><span class="contact-label">Email</span><a href="mailto:adinishad452@gmail.com">adinishad452@gmail.com</a></div><button class="copy-btn" id="copyEmail" type="button" aria-label="Copy email address">Copy</button></div>
+            <div class="contact-item"><span class="contact-icon">&#9679;</span><div><span class="contact-label">Location</span><span>Uttar Pradesh, India</span></div></div>
+            <div class="contact-item"><span class="contact-icon">&#9673;</span><div><span class="contact-label">Open to</span><span>Conversations, collaboration and learning together</span></div></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/IMPRIME15" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/adhyansh-nishad-8b8b80385/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/adi_mr360/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-right" id="contactForm" novalidate>
+          <div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required><small class="error" data-error-for="name"></small></div>
+          <div class="form-group"><label for="email">Your email</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required><small class="error" data-error-for="email"></small></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea><small class="error" data-error-for="message"></small></div>
+          <button class="btn btn-pink btn-full" type="submit">Prepare message <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-hint">Submitting opens your email app with the message ready to review and send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><a class="brand" href="#home"><span class="brand-mark">AN</span><span class="brand-text">Adhyansh Nishad</span></a><p>Aspiring AI/ML Engineer · Shri Ramswaroop Memorial University</p></div>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
+      <p class="copyright">&copy; <span id="currentYear">2026</span> Adhyansh Nishad.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
